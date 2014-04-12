@@ -26,8 +26,8 @@ $(call inherit-product-if-exists, vendor/samsung/celox-common/celox-common-vendo
 DEVICE_PACKAGE_OVERLAYS += device/samsung/celox-common/overlay
 
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Hardware
 PRODUCT_COPY_FILES += \
@@ -43,8 +43,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += qrngd
 
 # Bootanimation
-TARGET_SCREEN_WIDTH := 480
-TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 1280
 
 # common msm8660
 $(call inherit-product, device/samsung/msm8660-common/msm8660.mk)

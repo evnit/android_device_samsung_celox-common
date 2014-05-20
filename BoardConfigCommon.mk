@@ -31,8 +31,8 @@ BOARD_FAMILY := celox
 -include device/samsung/msm8660-common/BoardConfigCommon.mk
 
 # Kernel
-BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom usb_id_pin_rework=true no_console_suspend=true zcache
-BOARD_KERNEL_BASE           := 0x48000000
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom kgsl.mmutype=gpummu usb_id_pin_rework=true no_console_suspend=true zcache msm_watchdog.appsbark=0 msm_watchdog.enable=1 loglevel=4 androidboot.selinux=permissive
+BOARD_KERNEL_BASE := 0x48000000
 BOARD_KERNEL_PAGESIZE       := 2048
 BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01400000
 

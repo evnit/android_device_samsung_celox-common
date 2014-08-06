@@ -1,5 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter hercules skyrocket e120k SHV-E120K dali t769,$(TARGET_DEVICE)),)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+ifeq ($(BOARD_VENDOR),samsung)
+ifeq ($(BOARD_FAMILY),celox)
+ifeq ($(TARGET_BOARD_PLATFORM),msm8660)
+    include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif
+endif
 endif

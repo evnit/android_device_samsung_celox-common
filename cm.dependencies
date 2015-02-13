@@ -5,6 +5,6 @@
   },
   {
     "repository": "android_kernel_samsung_msm8660-common",
-    "target_path": "kernel/samsung/msm8660-common"
+    "target_path": "kernel/samsung/msm8660"
   }
 ]
